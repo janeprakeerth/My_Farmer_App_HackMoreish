@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Scientist_Main_Interface">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/btm_nav_main_scientist"
+        android:id="@+id/fl_for_fragments_scientist"
+        />
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/btm_nav_main_scientist"
+
+        app:mbn_backgroundBottomColor="#fffff7"
+        app:mbn_countBackgroundColor="#33AB5F"
+        app:mbn_defaultIconColor="@color/black"
+        app:mbn_rippleColor="#0AEB5C"
+
+        app:mbn_selectedIconColor="#0E9B41"
+        app:mbn_shadowColor="#330F6673"
+
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

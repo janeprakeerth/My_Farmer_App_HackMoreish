@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/farmerimage"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#006400"
+            android:alpha="0.8"
+            >
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Scientist"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginTop="100dp"
+
+                />
+            <TextView
+                android:id="@+id/weather_mode_scientist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haze"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="90dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/temperature_scientist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:text="27°C"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="120dp"
+                />
+            <TextView
+                android:id="@+id/min_temperature_scientist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:text="Min Temp:27°C"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="150dp"
+                />
+            <TextView
+                android:id="@+id/max_temperature_scientist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:text="Max Temp:27°C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="175dp"
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_post_scientist"
+        tools:listitem="@layout/each_layout_for_fragment"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

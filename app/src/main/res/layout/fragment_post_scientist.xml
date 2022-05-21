@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6D6A8">
+
+    <TextView
+        android:id="@+id/tv_improve_probability_scientist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingStart="15dp"
+        android:text="Improve the probability of receiving the right answer"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_crop_scientist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Add Crop"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ll_answer_to_the_community_scientist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_improve_probability_scientist" />
+
+    <LinearLayout
+        android:id="@+id/ll_answer_to_the_community_scientist"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_crop_scientist">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:text="Your answer to the community"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/et_add_a_answer_scientist"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Add a answer indicating the general farming questions"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#808080"
+            android:textSize="16sp"
+            android:textStyle="normal"></EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_description_of_the_problem_scientist"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_answer_to_the_community_scientist">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:text="Description of your post"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/et_add_post_description_scientist"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Describe specialities such as change of leaves,root,colour,bugs,tears..."
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#808080"
+            android:textSize="16sp"
+            android:textStyle="normal"></EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_an_image_scientist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:text="Add an image to your post"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_post_scientist"
+        app:layout_constraintTop_toBottomOf="@+id/ll_description_of_the_problem_scientist"
+        app:layout_constraintVertical_bias="0.533"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_camera_scientist"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#EE1A396C"
+        android:text="Camera"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_an_image_scientist" />
+
+    <Button
+        android:id="@+id/btn_gallery_scientist"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#EE1A396C"
+        android:text="Gallery"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@id/btn_camera_scientist"
+        app:layout_constraintTop_toBottomOf="@+id/add_an_image_scientist" />
+
+    <ImageView
+        android:id="@+id/iv_post_scientist"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gallery_scientist" />
+
+    <Button
+        android:id="@+id/btn_add_post_scientist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#808080"
+        android:text="Post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

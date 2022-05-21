@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable-v24/ic_baseline_send_24.xml" value="0.1390625" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/circular_image_view.xml" value="0.1962962962962963" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/ic_baseline_comment_24.xml" value="0.19427083333333334" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/ic_baseline_science_24.xml" value="0.2462962962962963" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.23703703703703705" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/img.xml" value="0.1962962962962963" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/message_bg.xml" value="0.18888888888888888" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/receiver_bg.xml" value="0.18888888888888888" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/drawable/sender_bg.xml" value="0.18888888888888888" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_answeractivity.xml" value="0.23324275362318841" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_comment.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_farmer_main_interface.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_farmer_or_scientist_selecter.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_language_selector.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_login.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_main.xml" value="0.19701086956521738" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_questionactivity.xml" value="0.2" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_questionansweractivity.xml" value="0.2" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_register.xml" value="0.19610507246376813" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_register_farmer.xml" value="0.1" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_register_scientist.xml" value="0.144" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_scientist_main_interface.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/activity_scientistanswertofarmeractivity.xml" value="0.21920289855072464" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/each_comment_item.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/each_farmer_chat_layout.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/each_farmer_question.xml" value="0.1" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/each_layout_for_fragment.xml" value="0.17844202898550723" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/each_question_answer.xml" value="0.22418478260869565" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/farmer_chat_each_item.xml" value="0.20923913043478262" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/farmer_chat_layout.xml" value="0.20380434782608695" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment1pager.xml" value="0.17844202898550723" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment2pager.xml" value="0.17844202898550723" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment3pager.xml" value="0.136" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_add.xml" value="0.152" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_home.xml" value="0.17844202898550723" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_home_scientist.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_message.xml" value="0.176" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_my_question.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_myquestion_scientist.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_post.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_post_scientist.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_profile.xml" value="0.1381340579710145" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/fragment_profile_scientist.xml" value="0.12310030395136778" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/login_tab_fragment_farmer.xml" value="0.4" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/message_item.xml" value="0.12291666666666666" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/recycler_view_receiver.xml" value="0.264" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/recycler_view_sender.xml" value="0.2" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/sign_up_tab_fragment_farmer.xml" value="0.176" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/sign_up_tab_fragment_scientist.xml" value="0.20969202898550723" />
+        <entry key="..\:/MyFarmer_App/app/src/main/res/layout/splashscreenlayot.xml" value="0.19701086956521738" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
