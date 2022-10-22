@@ -2,6 +2,7 @@ package com.example.myfarmer_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,8 +35,8 @@ class fragment_my_question: Fragment(R.layout.fragment_my_question) {
         val view : View? = inflater.inflate(R.layout.fragment_my_question , container , false)
         val questionanswers:FloatingActionButton = view!!.findViewById(R.id.questionanswers)
         questionanswers.setOnClickListener {
-            val intent = Intent(context,questionansweractivity::class.java)
-            startActivity(intent)
+                val intent = Intent(context, questionansweractivity::class.java)
+                startActivity(intent)
         }
         try {
         scientistlistrecyclerview = view?.findViewById(R.id.rv_farmer_chat)!!

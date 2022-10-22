@@ -1,7 +1,9 @@
 package com.example.myfarmer_app
 
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
@@ -40,12 +42,16 @@ class Farmer_Main_Interface : AppCompatActivity() {
                     setcurrentfragment(fragmentPost)
                 }
                 2->{
-                    setcurrentfragment(fragmentAdd)
-
+                    val intent = getPackageManager().getLaunchIntentForPackage("org.tensorflow.lite.examples.classification")
+                    if(intent!=null){
+                        startActivity(intent)
+                    }else{
+                        Log.i("message-55","false")
+                    }
+//                    setcurrentfragment(fragmentAdd)
                 }
                 3->{
                     setcurrentfragment(fragmentMyQuestion)
-
                 }
                 4->{
                     setcurrentfragment(fragmentProfile)
@@ -61,6 +67,15 @@ class Farmer_Main_Interface : AppCompatActivity() {
         supportFragmentManager.beginTransaction().apply{
             replace(binding?.flForFragments?.id!! ,fragment )
             commit()
+        }
+    }
+    fun appInstalledOrNot(url:String):Boolean{
+        var packageManager = getPackageManager()
+        try {
+            packageManager.getPackageInfo(url, PackageManager.GET_ACTIVITIES)
+            return true
+        }catch (e:Exception){
+            return false
         }
     }
 }

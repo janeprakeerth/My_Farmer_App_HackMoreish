@@ -2,6 +2,7 @@ package com.example.myfarmer_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,11 +34,25 @@ class questionansweractivity : AppCompatActivity() {
 //                        current_user_object?.scientistanswer.toString(),
 //                        Toast.LENGTH_SHORT
 //                    ).show()
+                    if (current_user_object?.scientistanswer == null) {
+                        Toast.makeText(
+                            this@questionansweractivity,
+                            "Currently The Question Is UnAnswered",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                    else{
                     val adapter = questionansweradapter(current_user_object?.scientistanswer!!)
                     binding?.rvQuestionansweractivity?.adapter = adapter
-                    binding?.rvQuestionansweractivity?.layoutManager = LinearLayoutManager(this@questionansweractivity)
-                    binding?.rvQuestionansweractivity?.addItemDecoration(DividerItemDecoration(binding?.rvQuestionansweractivity?.context,(binding?.rvQuestionansweractivity?.layoutManager as LinearLayoutManager).orientation))
-
+                    binding?.rvQuestionansweractivity?.layoutManager =
+                        LinearLayoutManager(this@questionansweractivity)
+                    binding?.rvQuestionansweractivity?.addItemDecoration(
+                        DividerItemDecoration(
+                            binding?.rvQuestionansweractivity?.context,
+                            (binding?.rvQuestionansweractivity?.layoutManager as LinearLayoutManager).orientation
+                        )
+                    )
+                }
                 }
             }catch (e:Exception){
                 withContext(Dispatchers.Main){
